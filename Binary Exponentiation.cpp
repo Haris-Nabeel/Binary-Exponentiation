@@ -2,10 +2,20 @@
 //
 
 #include <iostream>
+#include "PowerCalculator.h"
+using namespace std;
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    PowerCalculator *p = new PowerCalculator();
+    long result = p->simplePowerCalculator(223, 3932);
+    cout << "Result of Simple Power Calculator is " << + result << endl ;
+    long long bresult = p->binaryPowerCalculator(223, 3932);
+    cout << "Result of Binary Power Calculator is " << bresult << endl;
+   
+    
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
